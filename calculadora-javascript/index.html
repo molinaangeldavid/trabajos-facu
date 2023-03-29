@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="container-calculator">
+            <span class="title-calculator">Calculadora</span>
+
+                <div class="display-container">
+                    <div class="number-field">
+                        <input type="text" name="number-1" class="input-number" id="fn"/>
+                    </div>
+                    <div class="number-field">
+                        <input type="text" name="number-2" class="input-number" id="sn"/>
+                    </div>
+                </div>
+                <div class="flex-button-container">
+                    <div class="container-button-operator">
+                        <button class="button-operator" onclick="setOperator(this.id)" id="add">SUMAR</button>
+                        <button class="button-operator" onclick="setOperator(this.id)" id="sub">RESTAR</button>
+                        <button class="button-operator" onclick="setOperator(this.id)" id="pr">MULTIPLICACION</button>
+                        <button class="button-operator" onclick="setOperator(this.id)" id="dv">DIVISION</button>
+                    </div>
+                    <div class="container-button-result">
+                        <button class="button-result" onclick="getResult()">RESULTADO</button>
+                    </div>
+
+                </div>
+            
+            <span class="result" id="result">
+            </span>
+    
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
