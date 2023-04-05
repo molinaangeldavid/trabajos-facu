@@ -1,0 +1,12 @@
+.contenedor-cuadrados{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cuadrado{
+    margin: 0 5px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}

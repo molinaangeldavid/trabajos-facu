@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="contenedor-pagina">
+        <div class="ejercicios">
+            <h2>Ejercicio 1</h2>
+            <span>Escribir un valor en el input y mostrarlo por alerta</span>
+            <div>
+                <input type="text" id="valor1" />
+                <button onclick="funcionPrimerEjercicio()">Mostrar</button>
+            </div>
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 2</h2>
+            <span>Ingresar una edad e informar si es mayor o menor de edad (18 anios ya es mayor de edad)</span>
+            <div>
+                <input type="text" id="edad">
+                <button onclick="funcionSegundoEjercicio()">Mayor de edad?</button>
+                <input type="text" id="edadResultado" disabled>
+            </div>
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 3</h2>
+            <span>Ingresar una nota e informar dependiendo la situacion</span>
+            <ul>
+                <li>0 a 4 inclusive: <strong>Insuficiente</strong></li>
+                <li>5 a 6 inclusive: <strong>Suficiente</strong></li>
+                <li>7 a 10: <strong>Sobresaliente</strong></li>
+            </ul>
+            <input type="text" id="nota"/>
+            <button onclick="funcionTercerEjercicio()">Calcular nota</button>
+            <input type="text" id="resultadoNota" disabled>
+
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 4</h2>
+            <span>Ingresar 2 numeros e informar cual es el mayor</span>
+            <div>
+                <input type="text" id="valor2"/>
+                <input type="text" id="valor3"/>
+                <button onclick="funcionCuartoEjercicio()">Calcular Mayor</button>
+                <input type="text" id="resultado2y3" disabled>
+            </div>
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 5</h2>
+            <span id="texto-ejercicio5">Modificar el color del enunciado segun el color elegido</span>
+            <div>
+                <select name="colroes" id="colores">
+                    <option value="Marron">Marron</option>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Amarillo">Amarillo</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Cyan">Cyan</option>
+                </select>
+                <button onclick="funcionQuintoEjercicio()">Acualizar</button>
+            </div>
+        </div>
+        <div class="ejercicios">
+            <h2>Ejercicio 5</h2>
+            <span>Seleccionar el cuadrado y el color a aplicar para modificar los colores de los cuadrados</span>
+            <div>
+                <select name="" id="cuadrado-numero">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+                <select name="" id="color-cuadro">
+                    <option value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="cyan">Cyan</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="purple">Violeta</option>
+                    <option value="gray">Gris</option>
+                </select>
+                <button onclick="funcionSextoEjercicio()">Modificar</button>
+            </div>
+            <div class="contenedor-cuadrados">
+                <div class="cuadrado" id="c1"></div>
+                <div class="cuadrado" id="c2"></div>
+                <div class="cuadrado" id="c3"></div>
+                <div class="cuadrado" id="c4"></div>
+                <div class="cuadrado" id="c5"></div>
+                <div class="cuadrado" id="c6"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
